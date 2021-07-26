@@ -34,20 +34,23 @@ export class RegisterComponent implements OnInit {
       {
         uid.oninvalid
       }
-    if(this.b){
+    console.log(this.a);
+    if(this.a){
       let UpdateTemp;
       let Update = [];
-      this.router.navigate(['/user']);
+
       UpdateTemp = sessionStorage.getItem("LogMas");
-      if(UpdateTemp == null){
+      if (UpdateTemp == null) {
         this.Update.push(this.login);
-      }else if(UpdateTemp !== null){
-      UpdateTemp = JSON.parse(UpdateTemp);
-      this.Update = UpdateTemp;
-      this.Update.push(this.login);
+      } else if (UpdateTemp !== null) {
+        UpdateTemp = JSON.parse(UpdateTemp);
+        this.Update = UpdateTemp;
+        this.Update.push(this.login);
+      }
+      console.log('loool',this.Update)
       sessionStorage.setItem('LogMas', JSON.stringify(this.Update));
 
-      
+      this.router.navigate(['/user']);
 // var passid = document.registration.passid;
 // var uname = document.registration.username;
 // var uadd = document.registration.address;
@@ -81,7 +84,7 @@ export class RegisterComponent implements OnInit {
 // }
 // }
 // return false;
-      }
+      
     }
   }
   userid_validation(uid:any,mx:any,my:any){
