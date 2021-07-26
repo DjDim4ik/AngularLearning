@@ -1,0 +1,13 @@
+<app-navbar></app-navbar>
+<div class="form">
+    <div>
+        <div class="userList" [innerHTML]="htmlPost">
+        
+        </div>
+        <div class="userList">
+            <table class = "userList">
+                <tr *ngFor="let item of Update; let i = index" ><td>{{i + 1}}<td>{{item}}</td></tr>
+            </table>
+        </div>
+    </div>
+</div>

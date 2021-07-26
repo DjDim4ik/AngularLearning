@@ -1,0 +1,43 @@
+form{
+    display: flex;
+    margin: 0px 40px 0px 40px;
+    padding: 20px;
+    border-left: 1px solid black ;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    min-width: 300px;
+}
+input:focus{
+    box-shadow: 0 0 5px  rgb(204, 204, 204);
+}
+
+input{
+    border: 1px solid black;
+    margin: 0px 10px 10px 10px;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+}
+.reg{
+    display: flex;
+    justify-content: flex-end;
+}
+button{
+    border: 1px solid #000;
+    margin: 0px 10px 10px 10px;
+    width: 163.33px;
+}
+button:hover{
+    background-color: rgb(216, 216, 216);
+    box-shadow: 0 0 6px  rgb(204, 203, 203);
+}
+button:active{
+    background-color: grey;
+}
+input.ng-touched.ng-invalid {
+    border:solid red 2px;
+}
+input.ng-touched.ng-valid {
+    border:solid green 2px;
+}

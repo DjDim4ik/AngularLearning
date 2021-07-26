@@ -1,0 +1,27 @@
+<h1>Kakaya to hyina</h1>
+
+<input type="text" maxlength="1" pattern="^[ 0-9]+$" [(ngModel)]="mas[0]">
+<input type="text" maxlength="1" pattern="^[ 0-9]+$" [(ngModel)]="mas[1]">
+<input type="text" maxlength="1" pattern="^[ 0-9]+$" [(ngModel)]="mas[2]">
+<input type="text" maxlength="1" pattern="^[ 0-9]+$" [(ngModel)]="mas[3]">
+<input type="text" maxlength="1" pattern="^[ 0-9]+$" [(ngModel)]="mas[4]">
+<input type="text" maxlength="1" pattern="^[ 0-9]+$" [(ngModel)]="mas[5]">
+<input type="text" maxlength="1" pattern="^[ 0-9]+$" [(ngModel)]="mas[6]">
+<input type="text" maxlength="1" pattern="^[ 0-9]+$" [(ngModel)]="mas[7]">
+<input type="text" maxlength="1" pattern="^[ 0-9]+$" [(ngModel)]="mas[8]">
+<input type="text" maxlength="1" pattern="^[ 0-9]+$" [(ngModel)]="mas[9]">
+<br><br>
+<input type="text" readonly="true"  [(ngModel)]="sortedMas[0]">
+<input type="text" readonly="true" [(ngModel)]="sortedMas[1]">
+<input type="text" readonly="true" [(ngModel)]="sortedMas[2]">
+<input type="text" readonly="true" [(ngModel)]="sortedMas[3]">
+<input type="text" readonly="true" [(ngModel)]="sortedMas[4]">
+<input type="text" readonly="true" [(ngModel)]="sortedMas[5]">
+<input type="text" readonly="true" [(ngModel)]="sortedMas[6]">
+<input type="text" readonly="true" [(ngModel)]="sortedMas[7]">
+<input type="text" readonly="true" [(ngModel)]="sortedMas[8]">
+<input type="text" readonly="true" [(ngModel)]="sortedMas[9]">
+<br />
+<p *ngIf="sortedMas[0]">Congratulations!</p>
+<button class="btnRed" (click)="Calculate()">Calculate</button><br />
+<button class="btnGreen" (click)="GoHistory()" >History</button><br />

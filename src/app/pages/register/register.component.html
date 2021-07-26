@@ -1,0 +1,20 @@
+<app-navbar></app-navbar>
+<form name="registerFormName" #myForm="ngForm" novalidate>
+    <div>
+        <table>
+            <tr class="reg">
+                <td><label for="login">Login</label></td>
+                <td><input id="loginId" class="loginClass" [(ngModel)]="login" name="loginName" type="text" required></td>
+            </tr>
+            <tr class="reg"> 
+                <td><label for="password">Password</label></td>
+                <td><input id="passwordId" name="passwordName" type="password" id="password" required [(ngModel)]="password"></td>
+            </tr>
+            <tr class="reg"> 
+                <td><p></p></td>
+                <td><button (click)="GoUser(myForm)" [disabled]="myForm.invalid">Sign up</button></td>
+            </tr>  
+        </table>
+    </div>
+    
+</form>
